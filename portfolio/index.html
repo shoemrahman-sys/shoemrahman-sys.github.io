@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdul Rahaman Shoem | Data Analyst Portfolio</title>
+<meta name="description" content="Entry-level Data Analyst in Hyderabad. Product analytics, customer analytics and statistical testing with SQL, Python and Power BI.">
+<meta name="theme-color" content="#0f172a">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Abdul Rahaman Shoem</a>
+    <nav aria-label="Primary">
+      <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a class="btn sm" href="assets/Abdul_Rahaman_Shoem_Resume.docx" download>Download resume</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero wrap" id="top">
+  <div class="hero-text">
+    <p class="kicker">Data Analyst · Hyderabad, Telangana</p>
+    <h1>I find out why users drop off, and what to fix first.</h1>
+    <p class="lead">Entry-level Data Analyst with a B.Tech in Computer Science. I apply SQL, Python, Excel and Power BI to product and customer problems, across datasets of 50K fintech users, 96K e-commerce customer records and 2.38M taxi trips.</p>
+    <div class="actions">
+      <a class="btn primary" href="assets/Abdul_Rahaman_Shoem_Resume.docx" download>Download resume (DOCX)</a>
+      <a class="btn" href="#pulsepay">See flagship case study</a>
+    </div>
+    <ul class="links">
+      <li><a href="https://github.com/shoemrahman-sys" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/abdul-rahman-shoem" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=shoemrahman%40gmail.com" target="_blank" rel="noopener noreferrer">shoemrahman@gmail.com</a></li>
+      <li><a href="tel:+917330078541">+91-7330078541</a></li>
+    </ul>
+  </div>
+  <button class="shot hero-shot" type="button" data-index="0" aria-label="Enlarge PulsePay Executive Overview dashboard">
+    <img src="images/pulsepay-executive-overview-thumb.webp" width="900" height="510" alt="PulsePay Executive Overview Power BI dashboard showing 50K users, funnel and weekly transacting users">
+    <span>Enlarge dashboard</span>
+  </button>
+</section>
+
+<section class="wrap" id="projects">
+  <h2>Case studies</h2>
+  <p class="intro">Each project starts with a business question, uses methods suited to the data, and keeps observed results separate from causal claims.</p>
+
+  <article class="case flagship" id="pulsepay">
+    <header>
+      <p class="tag">Flagship project</p>
+      <h3>PulsePay: End-to-End Product Analytics &amp; Intelligence Platform</h3>
+      <p class="stack">MySQL, SQL, Python, Pandas, Power BI, Statistical Analysis · <a href="https://github.com/shoemrahman-sys/Pulsepay-product-intelligence" target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
+    </header>
+    <dl class="study">
+      <div><dt>Business problem</dt><dd>Where do users drop out of onboarding and activation, why, and would a simplified KYC flow help? Data: 50,000 synthetic fintech users.</dd></div>
+      <div><dt>Analytical approach</dt><dd>Reusable SQL views for funnel conversion, activation, retention, acquisition-channel performance and product KPIs. Root-cause analysis of KYC failures across devices and app versions. A/B experiment evaluation with a sample-ratio-mismatch check. A four-page Power BI dashboard built with DAX, plus automated Python analytics, evidence preparation and PDF/DOCX reporting.</dd></div>
+      <div><dt>Findings</dt><dd>
+        <ul>
+          <li>Android 5.4 KYC completion was <strong>54.69%</strong> vs <strong>76.18%</strong> on Android 5.3. The dashboard shows 1,420 document-upload errors across 5,129 Android 5.4 attempts (27.69%).</li>
+          <li>The largest funnel drop is between KYC Started and KYC Completed (10,830 users). 19,102 of 50,000 users (38.20%) made a successful transaction.</li>
+          <li>D30 retention rises from 1.10% for users with no early transactions to 16.11% for users with five or more in their first seven days.</li>
+          <li>The 6,032-user KYC experiment was <strong>inconclusive</strong>: control 62.55% vs treatment 62.48% (SRM p = 0.918; lift p = 0.9575; 95% CI −2.51 to +2.38 pp).</li>
+        </ul></dd></div>
+      <div><dt>Business implication</dt><dd>Android 5.4's document-upload flow is the first thing to investigate. Against the Android 5.3 baseline, a counterfactual estimate puts the gap at 1,102 fewer KYC completions and 692 downstream activations. These are estimates, not confirmed losses. The simplified KYC flow has not shown a meaningful improvement, and encouraging early repeat transactions is the clearest retention opportunity. Channel scores combine activation, D30 retention and KYC completion; they are not profitability or lifetime value.</dd></div>
+    </dl>
+
+    <h4 id="gallery-title">Dashboard gallery <span class="hint">Select an image to enlarge</span></h4>
+    <ul class="gallery" aria-labelledby="gallery-title">
+      <li><button class="shot" type="button" data-index="0"><img loading="lazy" src="images/pulsepay-executive-overview-thumb.webp" width="900" height="510" alt="PulsePay Executive Overview dashboard"><span>Executive Overview</span></button></li>
+      <li><button class="shot" type="button" data-index="1"><img loading="lazy" src="images/pulsepay-growth-retention-thumb.webp" width="900" height="505" alt="PulsePay Growth and Retention dashboard"><span>Growth &amp; Retention</span></button></li>
+      <li><button class="shot" type="button" data-index="2"><img loading="lazy" src="images/pulsepay-kyc-incident-thumb.webp" width="900" height="485" alt="PulsePay KYC Incident Investigation dashboard"><span>KYC Incident Investigation</span></button></li>
+      <li><button class="shot" type="button" data-index="3"><img loading="lazy" src="images/pulsepay-experiment-lab-thumb.webp" width="900" height="495" alt="PulsePay Experiment Lab dashboard"><span>Experiment Lab</span></button></li>
+    </ul>
+  </article>
+
+  <article class="case" id="olist">
+    <header>
+      <h3>Customer Churn Analysis: Olist</h3>
+      <p class="stack">Python, MySQL, Pandas, Matplotlib, Seaborn · Jan 2026 – Feb 2026 · <a href="https://github.com/shoemrahman-sys/customer-churn-analysis" target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
+    </header>
+    <dl class="study">
+      <div><dt>Business problem</dt><dd>Which customers are lost, and where should retention effort go? Data: 96,096 customer-level records from the Olist Brazilian e-commerce dataset.</dd></div>
+      <div><dt>Analytical approach</dt><dd>Built a customer-level Analytical Base Table (ABT) on <code>customer_unique_id</code> using MySQL and Python. Defined churn as 180 days of inactivity, then analysed behaviour, delivery performance and revenue contribution.</dd></div>
+      <div><dt>Findings</dt><dd><ul>
+        <li>Repeat purchase rate of about 3%, a significant retention challenge.</li>
+        <li>Churn was <strong>85.8%</strong> for very-late deliveries vs <strong>59.0%</strong> for on-time (26.8 pp gap).</li>
+        <li>The top 10% of customers generated 38.25% of revenue; low-value customers made up 50.27% of churned customers.</li>
+      </ul></dd></div>
+      <div><dt>Business implication</dt><dd>High-value customer retention and delivery reliability are potential priorities. The delivery and churn link is observational, so it flags a priority but does not prove late delivery caused churn.</dd></div>
+    </dl>
+  </article>
+
+  <article class="case" id="taxi">
+    <header>
+      <h3>Revenue Optimization Analysis: Payment Type vs. Fare</h3>
+      <p class="stack">Python, Pandas, SciPy, Matplotlib, Seaborn · May 2026 – Jun 2026 · <a href="https://github.com/shoemrahman-sys/revenue-optimization-ab-testing-analysis" target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
+    </header>
+    <dl class="study">
+      <div><dt>Business problem</dt><dd>Do card and cash trips differ in fare? Data: January 2020 NYC Yellow Taxi trips.</dd></div>
+      <div><dt>Analytical approach</dt><dd>Cleaned and validated 6.4M trips, filtered to 2.78M card and cash trips with 1–5 passengers, then removed non-positive values and IQR outliers, leaving 2.38M. Compared card (n = 1,605,332) and cash (n = 772,886) fares with Welch's two-sample t-test.</dd></div>
+      <div><dt>Findings</dt><dd><ul>
+        <li>Mean fare was <strong>$13.70</strong> for card vs <strong>$12.25</strong> for cash (t = 165.6, p &lt; 0.001).</li>
+        <li>Card trips were also longer on average: 3.23 vs 2.80 miles.</li>
+      </ul></dd></div>
+      <div><dt>Business implication</dt><dd>The fare gap may partly reflect trip length. The comparison is observational and unadjusted, not a randomized A/B test, and does not show that payment type changes fares.</dd></div>
+    </dl>
+  </article>
+</section>
+
+<section class="wrap" id="skills">
+  <h2>Technical skills</h2>
+  <dl class="skills">
+    <div><dt>Languages &amp; querying</dt><dd>SQL (MySQL; joins, CTEs, aggregations, conditional logic), Python</dd></div>
+    <div><dt>Python libraries</dt><dd>Pandas, NumPy, SciPy, Matplotlib, Seaborn, SQLAlchemy</dd></div>
+    <div><dt>Analytics &amp; statistics</dt><dd>EDA, statistical analysis, hypothesis testing, Welch's t-test, Chi-square test, data cleaning, data validation, root cause analysis</dd></div>
+    <div><dt>Business analytics</dt><dd>Customer analytics, product analytics, funnel analysis, KPI development, business intelligence, decision support</dd></div>
+    <div><dt>Visualization &amp; BI</dt><dd>Power BI (DAX with CALCULATE, DIVIDE, SWITCH; KPI cards; slicers; interactive dashboards), Excel (Pivot Tables, Power Query, XLOOKUP)</dd></div>
+    <div><dt>Tools &amp; web</dt><dd>Git, GitHub, Jupyter Notebook; HTML, CSS, basic JavaScript</dd></div>
+  </dl>
+</section>
+
+<section class="wrap" id="experience">
+  <h2>Experience, education and training</h2>
+  <div class="timeline">
+    <div><h3>Web Development Intern, NNAI Solutions</h3><p class="when">Jul 2026 – Sep 2026</p><p>Completed a 3-month internship with HTML, CSS and basic JavaScript. Practised page structure, layout and CSS styling, and learned core JavaScript concepts for interactivity.</p></div>
+    <div><h3>B.Tech, Computer Science and Engineering</h3><p class="when">2021 – 2025</p><p>Shadan College of Engineering and Technology, Hyderabad · CGPA 7.2 / 10</p></div>
+    <div><h3>Data Analytics Training, NareshIT, Hyderabad</h3><p class="when">Sep 2025 – Dec 2025</p><p>Hands-on training in SQL, Python, Power BI and Excel, covering data modeling, ETL workflows, KPI reporting and dashboard development.</p></div>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <h2>Let's talk about data and business problems</h2>
+  <div class="actions">
+    <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=shoemrahman%40gmail.com&su=Portfolio%20Enquiry" target="_blank" rel="noopener noreferrer">Email me</a>
+    <a class="btn" href="tel:+917330078541">Call +91-7330078541</a>
+    <a class="btn" href="https://www.linkedin.com/in/abdul-rahman-shoem" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn" href="https://github.com/shoemrahman-sys" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn" href="assets/Abdul_Rahaman_Shoem_Resume.docx" download>Download resume</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap"><p>© 2026 Abdul Rahaman Shoem · Hyderabad, Telangana · Built with plain HTML, CSS and JavaScript.</p></footer>
+
+<dialog id="lightbox" aria-label="Dashboard preview">
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <div class="lb-ctl">
+    <button type="button" id="lb-prev" aria-label="Previous dashboard">Previous</button>
+    <button type="button" id="lb-next" aria-label="Next dashboard">Next</button>
+    <button type="button" id="lb-close" aria-label="Close preview">Close</button>
+  </div>
+</dialog>
+<script src="js/main.js" defer></script>
+</body>
+</html>
